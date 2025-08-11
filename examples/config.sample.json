@@ -1,0 +1,20 @@
+{
+    "text_or_documents": "ROMEO: Juliet is the sun. JULIET: O Romeo, Romeo!",
+    "prompt_description": "Extract characters and utterances",
+    "examples": [
+      {
+        "text": "ROMEO: But soft! what light...",
+        "extractions": [
+          {
+            "extraction_class": "character",
+            "extraction_text": "ROMEO",
+            "attributes": {"role": "speaker"}
+          }
+        ]
+      }
+    ],
+    "extraction_passes": 2,
+    "max_workers": 4,
+    "max_char_buffer": 1200
+  }
+  
