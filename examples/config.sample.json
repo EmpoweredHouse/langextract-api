@@ -1,20 +1,177 @@
 {
-    "text_or_documents": "ROMEO: Juliet is the sun. JULIET: O Romeo, Romeo!",
-    "prompt_description": "Extract characters and utterances",
-    "examples": [
-      {
-        "text": "ROMEO: But soft! what light...",
-        "extractions": [
-          {
-            "extraction_class": "character",
-            "extraction_text": "ROMEO",
-            "attributes": {"role": "speaker"}
+  "text_or_documents": "ROMEO: But soft! what light through yonder window breaks? It is the east, and Juliet is the sun. JULIET: O Romeo, Romeo! wherefore art thou Romeo? Deny thy father and refuse thy name; Or, if thou wilt not, be but sworn my love, And I'll no longer be a Capulet. NURSE: Madam! JULIET: I come, anon.—But if thou mean'st not well, I do beseech thee— NURSE: Madam! JULIET: By and by, I come:— To cease thy strife, and leave me to my grief: To-morrow will I send.",
+  "prompt_description": "Extract characters, their utterances, emotions, and relationships from Shakespearean dialogue",
+  "examples": [
+    {
+      "text": "ROMEO: But soft! what light through yonder window breaks? It is the east, and Juliet is the sun.",
+      "extractions": [
+        {
+          "extraction_class": "character",
+          "extraction_text": "ROMEO",
+          "attributes": {
+            "role": "speaker",
+            "gender": "male",
+            "family": "Montague"
           }
-        ]
+        },
+        {
+          "extraction_class": "utterance",
+          "extraction_text": "But soft! what light through yonder window breaks? It is the east, and Juliet is the sun.",
+          "attributes": {
+            "speaker": "ROMEO",
+            "emotion": "wonder",
+            "metaphor": "Juliet as sun"
+          }
+        },
+        {
+          "extraction_class": "character",
+          "extraction_text": "Juliet",
+          "attributes": {
+            "role": "mentioned",
+            "gender": "female",
+            "family": "Capulet"
+          }
+        }
+      ]
+    },
+    {
+      "text": "JULIET: O Romeo, Romeo! wherefore art thou Romeo? Deny thy father and refuse thy name; Or, if thou wilt not, be but sworn my love, And I'll no longer be a Capulet.",
+      "extractions": [
+        {
+          "extraction_class": "character",
+          "extraction_text": "JULIET",
+          "attributes": {
+            "role": "speaker",
+            "gender": "female",
+            "family": "Capulet"
+          }
+        },
+        {
+          "extraction_class": "utterance",
+          "extraction_text": "O Romeo, Romeo! wherefore art thou Romeo? Deny thy father and refuse thy name; Or, if thou wilt not, be but sworn my love, And I'll no longer be a Capulet.",
+          "attributes": {
+            "speaker": "JULIET",
+            "emotion": "despair",
+            "theme": "name and identity"
+          }
+        },
+        {
+          "extraction_class": "character",
+          "extraction_text": "Romeo",
+          "attributes": {
+            "role": "addressed",
+            "gender": "male",
+            "family": "Montague"
+          }
+        },
+        {
+          "extraction_class": "relationship",
+          "extraction_text": "Romeo and Juliet",
+          "attributes": {
+            "type": "romantic",
+            "families": ["Montague", "Capulet"],
+            "conflict": "feuding families"
+          }
+        }
+      ]
+    },
+    {
+      "text": "NURSE: Madam! JULIET: I come, anon.—But if thou mean'st not well, I do beseech thee— NURSE: Madam! JULIET: By and by, I come:— To cease thy strife, and leave me to my grief: To-morrow will I send.",
+      "extractions": [
+        {
+          "extraction_class": "character",
+          "extraction_text": "NURSE",
+          "attributes": {
+            "role": "speaker",
+            "gender": "female",
+            "relationship": "servant to Juliet"
+          }
+        },
+        {
+          "extraction_class": "character",
+          "extraction_text": "JULIET",
+          "attributes": {
+            "role": "speaker",
+            "gender": "female",
+            "family": "Capulet"
+          }
+        },
+        {
+          "extraction_class": "utterance",
+          "extraction_text": "Madam!",
+          "attributes": {
+            "speaker": "NURSE",
+            "emotion": "urgency",
+            "purpose": "summoning"
+          }
+        },
+        {
+          "extraction_class": "utterance",
+          "extraction_text": "I come, anon.—But if thou mean'st not well, I do beseech thee—",
+          "attributes": {
+            "speaker": "JULIET",
+            "emotion": "anxiety",
+            "tone": "pleading"
+          }
+        },
+        {
+          "extraction_class": "utterance",
+          "extraction_text": "By and by, I come:— To cease thy strife, and leave me to my grief: To-morrow will I send.",
+          "attributes": {
+            "speaker": "JULIET",
+            "emotion": "resignation",
+            "theme": "separation"
+          }
+        }
+      ]
+    }
+  ],
+  "extraction_passes": 3,
+  "max_workers": 6,
+  "max_char_buffer": 2000,
+  "extraction_classes": [
+    {
+      "name": "character",
+      "description": "Named individuals who appear in the text",
+      "attributes": {
+        "role": "speaker, mentioned, addressed, or other",
+        "gender": "male, female, or unspecified",
+        "family": "family name if applicable",
+        "relationship": "relationship to other characters"
       }
-    ],
-    "extraction_passes": 2,
-    "max_workers": 4,
-    "max_char_buffer": 1200
+    },
+    {
+      "name": "utterance",
+      "description": "Complete spoken statements by characters",
+      "attributes": {
+        "speaker": "character who speaks",
+        "emotion": "emotional state conveyed",
+        "theme": "main topic or theme",
+        "tone": "manner of speaking",
+        "metaphor": "metaphorical language used",
+        "purpose": "intent of the utterance"
+      }
+    },
+    {
+      "name": "relationship",
+      "description": "Connections between characters",
+      "attributes": {
+        "type": "romantic, familial, friendship, or other",
+        "families": "family names involved",
+        "conflict": "any conflicts or tensions"
+      }
+    }
+  ],
+  "output_format": {
+    "file_type": "jsonl",
+    "include_metadata": true,
+    "include_confidence_scores": true
+  },
+  "processing_options": {
+    "case_sensitive": false,
+    "preserve_whitespace": true,
+    "normalize_unicode": true,
+    "extract_partial_matches": true
   }
+}
   

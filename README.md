@@ -320,5 +320,3 @@ open report.html
 ```
 
 If you want, I can also add a `docker-compose.yml`, GitHub Actions CI with a smoke test hitting `/health` and a mocked `/extract`, plus a `make demo` that boots the container and runs a sample request end-to-end.
-::contentReference[oaicite:0]{index=0}
-```

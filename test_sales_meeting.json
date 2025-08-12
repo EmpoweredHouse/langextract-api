@@ -1,0 +1,136 @@
+{
+  "text_or_documents": "[00:00] Sarah Johnson (Sales Rep): Good morning everyone, thanks for joining us today. I'm Sarah Johnson from TechSolutions, and I'm here with my colleague Mike Chen, our technical lead. We're excited to discuss your e-commerce platform requirements.\n\n[00:15] David Martinez (Client): Morning Sarah, Mike. Thanks for making time. I'm David Martinez, VP of Operations at FashionForward. We're looking to completely revamp our online presence.\n\n[00:30] Sarah: Great to meet you David. Before we dive in, could you give us a quick overview of your current situation and what's driving this change?\n\n[00:45] David: Sure. We've been using an old Magento setup for about eight years now. It's... it's really showing its age. Our customers complain about slow load times, the mobile experience is terrible, and we're losing sales because the checkout process is too complicated.\n\n[01:00] Mike Chen: I see. What's your current monthly traffic volume and average order value?\n\n[01:15] David: We get about 50,000 unique visitors per month, average order value is around $85. But we think we could double that with a better platform.\n\n[01:30] Sarah: That's significant growth potential. What's your timeline for this project?\n\n[01:45] David: We need to launch before the holiday season. So ideally, we'd like to go live by November 15th. That gives us about four months from when we sign the contract.\n\n[02:00] Mike: That's a tight timeline. What features are must-haves versus nice-to-haves?\n\n[02:15] David: Must-haves: mobile-first design, fast checkout, inventory management, customer reviews, and integration with our existing ERP system. Nice-to-haves would be AI-powered product recommendations, advanced analytics dashboard, and multi-language support.\n\n[02:30] Sarah: Got it. What's your budget range for this project?\n\n[02:45] David: We're looking at $150,000 to $250,000 total, including development, testing, and initial support. But we need to see a clear ROI within 18 months.\n\n[03:00] Mike: That's reasonable. Who are the key stakeholders we should be aware of?\n\n[03:15] David: I'm the main decision maker, but we'll need buy-in from our CEO, Maria Rodriguez, and our IT director, James Wilson. Also, our marketing team will be heavily involved in the content migration.\n\n[03:30] Sarah: Perfect. Let's talk about your current pain points in more detail. What's the biggest issue you're facing right now?\n\n[03:45] David: Honestly, it's the mobile experience. 70% of our traffic comes from mobile devices, but our current site is basically unusable on phones. Customers abandon their carts constantly.\n\n[04:00] Mike: What's your current conversion rate?\n\n[04:15] David: It's embarrassingly low - about 1.2%. We know we're leaving money on the table.\n\n[04:30] Sarah: That's definitely room for improvement. What about your inventory management? How many SKUs are we talking about?\n\n[04:45] David: We have about 2,500 active SKUs across clothing, accessories, and footwear. We need real-time inventory updates and the ability to handle backorders gracefully.\n\n[05:00] Mike: Do you have any specific requirements for the tech stack or are you open to our recommendations?\n\n[05:15] David: We're open to recommendations, but we need it to integrate with our existing systems. We use SAP for ERP and Salesforce for CRM.\n\n[05:30] Sarah: That's helpful. What about payment processing? Any preferences there?\n\n[05:45] David: We currently use Stripe, but we're open to alternatives if they offer better rates or features. We also need to support international payments since we're expanding to Canada and Mexico.\n\n[06:00] Mike: International expansion - that's exciting. What about shipping and fulfillment?\n\n[06:15] David: We have our own warehouse in Dallas, but we're considering outsourcing fulfillment for international orders. We need the platform to handle multiple shipping options and real-time rate calculations.\n\n[06:30] Sarah: Got it. Let's talk about the content migration. How much content are we dealing with?\n\n[06:45] David: We have about 1,200 product pages, plus blog content, customer reviews, and a lot of historical order data. We need to preserve all of that.\n\n[07:00] Mike: That's a substantial migration. What about SEO? Are you concerned about losing rankings during the transition?\n\n[07:15] David: Very concerned. SEO drives about 40% of our traffic. We can't afford to lose that.\n\n[07:30] Sarah: Absolutely. We'll need a comprehensive SEO migration strategy. What about your team? Who will be managing the new platform day-to-day?\n\n[07:45] David: We have a small e-commerce team - myself, two marketing specialists, and we're hiring a dedicated e-commerce manager. They'll need training on the new system.\n\n[08:00] Mike: Training is definitely important. What about ongoing support and maintenance?\n\n[08:15] David: We need 24/7 support, especially during peak seasons. And we want a clear SLA for response times.\n\n[08:30] Sarah: That's standard for us. Let's talk about the project phases. How would you like to approach this?\n\n[08:45] David: We'd prefer an agile approach with regular demos. We want to see progress and be able to provide feedback throughout the process.\n\n[09:00] Mike: That works well for us. We typically do two-week sprints with demos at the end of each sprint. What about user acceptance testing?\n\n[09:15] David: We'll need time for thorough testing, especially the checkout process and inventory management. We can't afford any bugs going live.\n\n[09:30] Sarah: Of course. What about post-launch support? How long do you need us to stay involved?\n\n[09:45] David: At least three months post-launch for stabilization and optimization. Then we can discuss ongoing maintenance contracts.\n\n[10:00] Mike: That sounds reasonable. Let's talk about some technical specifics. What's your current hosting setup?\n\n[10:15] David: We're on a shared hosting plan, which is part of the problem. We need something more robust and scalable.\n\n[10:30] Sarah: We can definitely help with that. What about security requirements? Any specific compliance needs?\n\n[10:45] David: We need PCI compliance for credit card processing, and we handle some personal data, so GDPR compliance is important too.\n\n[11:00] Mike: Standard requirements for e-commerce. What about performance expectations? What's your target for page load times?\n\n[11:15] David: We want pages to load in under 2 seconds on mobile. That's non-negotiable.\n\n[11:30] Sarah: That's achievable with the right architecture. What about analytics and reporting? What metrics are most important to you?\n\n[11:45] David: Conversion rate, average order value, customer lifetime value, and cart abandonment rate. We need real-time dashboards for these.\n\n[12:00] Mike: Got it. What about A/B testing capabilities? Is that something you'd use?\n\n[12:15] David: Definitely. We want to test different product page layouts, checkout flows, and promotional strategies.\n\n[12:30] Sarah: That's great. It shows you're data-driven. What about customer service integration? Do you have a help desk system?\n\n[12:45] David: We use Zendesk, but we're open to switching if there's a better integration option.\n\n[13:00] Mike: Zendesk has good APIs, so integration shouldn't be an issue. What about email marketing? What platform are you using?\n\n[13:15] David: Mailchimp, but we're considering switching to Klaviyo for better e-commerce features.\n\n[13:30] Sarah: Klaviyo is excellent for e-commerce. Let's talk about the competitive landscape. Who are your main competitors?\n\n[13:45] David: Our biggest competitors are Nordstrom, Macy's, and some direct-to-consumer brands. We need to match or exceed their online experience.\n\n[14:00] Mike: That's a high bar, but achievable. What about mobile apps? Are you considering native apps or progressive web apps?\n\n[14:15] David: We're leaning toward a progressive web app for now. Native apps can come later if needed.\n\n[14:30] Sarah: That's a smart approach. It's more cost-effective and easier to maintain. What about social media integration?\n\n[14:45] David: We're active on Instagram, Facebook, and TikTok. We need seamless integration for social commerce features.\n\n[15:00] Mike: Social commerce is growing rapidly. What about customer reviews and ratings? How important is that for your business?\n\n[15:15] David: Very important. Reviews drive about 25% of our sales. We need a robust review system with moderation capabilities.\n\n[15:30] Sarah: That's significant. Let's talk about the project timeline in more detail. When would you like to start?\n\n[15:45] David: Ideally, we'd like to sign the contract by the end of this month and start development in early August.\n\n[16:00] Mike: That gives us about three months for development and one month for testing and launch. It's tight but doable. What about the discovery phase?\n\n[16:15] David: We can dedicate a week to discovery and requirements gathering. We have all the key stakeholders available.\n\n[16:30] Sarah: Perfect. What about the budget breakdown? Do you have preferences for how the costs are structured?\n\n[16:45] David: We'd prefer a fixed-price contract with milestone payments. We can do 25% upfront, 25% at the halfway point, 25% at launch, and 25% after the stabilization period.\n\n[17:00] Mike: That's a standard structure for us. What about change orders? How do you want to handle scope changes?\n\n[17:15] David: We understand that changes will happen. We just need transparency about the impact on timeline and budget.\n\n[17:30] Sarah: Absolutely. We'll document everything clearly. What about intellectual property? Any concerns about code ownership?\n\n[17:45] David: We want to own the custom code, but we're fine with you reusing components for other clients. We just don't want to be locked into a proprietary platform.\n\n[18:00] Mike: That's fair. We typically use open-source frameworks anyway. What about data ownership and portability?\n\n[18:15] David: We need to own all our data and be able to export it easily. We can't be locked into a platform that makes it difficult to leave.\n\n[18:30] Sarah: That's standard for us. We believe in data portability. What about the team that will be working on this? Can you tell us about your experience?\n\n[18:45] David: We've worked with several agencies before, but we've had mixed results. We're looking for a partner, not just a vendor. We want someone who understands our business and can grow with us.\n\n[19:00] Mike: That's exactly how we approach projects. We see ourselves as an extension of your team. What about communication preferences? How often do you want updates?\n\n[19:15] David: Weekly status calls would be great, plus daily updates during critical phases. We want to be involved but not micromanaging.\n\n[19:30] Sarah: That works for us. We use Slack for daily communication and Zoom for weekly calls. What about decision-making? Who has the final say on design and functionality decisions?\n\n[19:45] David: I have the authority to make most decisions, but for major changes, I'll need to consult with Maria and James. We'll establish clear approval processes.\n\n[20:00] Mike: That's helpful to know. What about risk mitigation? What are your biggest concerns about this project?\n\n[20:15] David: Our biggest concern is timeline. We can't miss the holiday season. Also, we're worried about data migration - we can't lose any customer data or order history.\n\n[20:30] Sarah: Those are valid concerns. We'll build in extra time for testing and have a comprehensive backup strategy. What about success metrics? How will we measure success?\n\n[20:45] David: We want to see at least a 50% improvement in conversion rate, 30% faster page load times, and a 25% increase in average order value within six months of launch.\n\n[21:00] Mike: Those are ambitious but achievable goals. We'll need to establish baseline measurements before we start. What about ongoing optimization?\n\n[21:15] David: We want to continue optimizing after launch. We're willing to invest in ongoing improvements based on data and user feedback.\n\n[21:30] Sarah: That's the right approach. E-commerce is never really \"done\" - it's always evolving. What about the competitive analysis? Have you done any research on what your competitors are doing well?\n\n[21:45] David: Yes, we've done some analysis. Nordstrom has excellent product filtering and search. Macy's has great mobile checkout. We want to incorporate the best features from all of them.\n\n[22:00] Mike: That's smart. We can do a detailed competitive analysis as part of our discovery phase. What about your current technology stack? Any systems we need to be aware of?\n\n[22:15] David: Besides SAP and Salesforce, we use Google Analytics, Hotjar for user behavior, and we're implementing a new inventory management system next month.\n\n[22:30] Sarah: That's helpful context. What about the team structure on your side? Who will be our main point of contact?\n\n[22:45] David: I'll be the main contact, but you'll also work closely with our IT director James and our marketing manager Lisa Chen. They'll be involved in the technical and content aspects respectively.\n\n[23:00] Mike: Perfect. What about the project kickoff? When can we get the full team together?\n\n[23:15] David: We can do a full-day kickoff workshop next week if that works for you. We'll have all the key stakeholders there.\n\n[23:30] Sarah: That would be ideal. We can cover requirements gathering, timeline planning, and team introductions. What about the contract terms? Any specific requirements?\n\n[23:45] David: We need a clear statement of work with detailed deliverables and acceptance criteria. We also want performance guarantees and penalty clauses for missed deadlines.\n\n[24:00] Mike: That's standard for us. We'll include performance SLAs and clear acceptance criteria. What about the warranty period?\n\n[24:15] David: We want at least a 90-day warranty period after launch, covering any bugs or issues that come up.\n\n[24:30] Sarah: That's reasonable. We typically offer 90 days as standard. What about the handover process? How do you want to handle knowledge transfer?\n\n[24:45] David: We need comprehensive documentation and training for our team. We want to be self-sufficient after the warranty period.\n\n[25:00] Mike: We'll create detailed documentation and provide training sessions. What about ongoing support after the warranty period?\n\n[25:15] David: We'll need ongoing support, but we want to discuss the pricing and scope of that separately. We don't want to be locked into expensive maintenance contracts.\n\n[25:30] Sarah: That's fair. We can discuss ongoing support options as we get closer to launch. What about the project governance? How do you want to handle escalations and issues?\n\n[25:45] David: We want a clear escalation path. If there are issues, we want to know immediately and have a plan to resolve them quickly.\n\n[26:00] Mike: We'll establish clear communication protocols and escalation procedures. What about quality assurance? What's your approach to testing?\n\n[26:15] David: We need thorough testing at every stage. We can't afford to go live with bugs. We want to be involved in the testing process.\n\n[26:30] Sarah: Absolutely. We'll include you in all testing phases. What about the go-live strategy? How do you want to handle the transition?\n\n[26:45] David: We want a gradual rollout if possible. Maybe start with a small percentage of traffic and gradually increase it.\n\n[27:00] Mike: That's a smart approach. We can do a blue-green deployment with traffic splitting. What about rollback procedures?\n\n[27:15] David: We need to be able to rollback quickly if there are issues. We can't afford downtime during peak hours.\n\n[27:30] Sarah: We'll have comprehensive rollback procedures in place. What about monitoring and alerting? What metrics do you want to track?\n\n[27:45] David: We want real-time monitoring of site performance, error rates, and business metrics. We need alerts for any issues that could affect sales.\n\n[28:00] Mike: We'll set up comprehensive monitoring and alerting. What about the project closure? How do you want to handle project completion?\n\n[28:15] David: We want a formal project closure with lessons learned and recommendations for future improvements.\n\n[28:30] Sarah: That's a great practice. We'll document everything thoroughly. What about the next steps? What would you like to do after this call?\n\n[28:45] David: We'd like to see a detailed proposal within a week, including timeline, budget breakdown, and team bios. Then we can schedule the kickoff workshop.\n\n[29:00] Mike: That works for us. We'll put together a comprehensive proposal. What about references? Would you like to speak with some of our previous clients?\n\n[29:15] David: Yes, that would be helpful. We'd like to talk to clients who have done similar e-commerce projects.\n\n[29:30] Sarah: We'll provide references from similar projects. What about the decision timeline? When do you need to make a decision?\n\n[29:45] David: We need to make a decision by the end of this month to meet our timeline. We're also talking to two other agencies, but we're impressed with your approach so far.\n\n[30:00] Sarah: Thank you for the opportunity. We're excited about this project and confident we can deliver exactly what you need. Mike and I will put together a compelling proposal that addresses all your requirements.\n\n[30:15] David: Great. Thanks for your time today. I look forward to seeing the proposal.\n\n[30:30] Sarah: You're welcome. We'll be in touch soon. Have a great day everyone.",
+  "prompt_description": "Extract comprehensive information from this sales meeting transcript including client requirements, budget, timeline, stakeholders, technical specifications, business metrics, pain points, success criteria, and project governance details.",
+  "examples": [
+    {
+      "text": "[00:00] John (Sales): Hi, I'm John from TechCorp. We're here to discuss your website redesign project.\n\n[00:15] Mary (Client): Thanks John. I'm Mary from RetailStore. We need a new e-commerce site with mobile optimization and payment processing.\n\n[00:30] John: What's your budget for this project?\n\n[00:45] Mary: We have $100,000 allocated. We need it done by December for the holiday season.\n\n[01:00] John: Who are the key decision makers?\n\n[01:15] Mary: I'm the main contact, but our CEO Tom and IT director Sarah need to approve major decisions.\n\n[01:30] John: What are your current pain points?\n\n[01:45] Mary: Slow loading times, poor mobile experience, and customers can't complete purchases easily.",
+      "extractions": [
+        {
+          "extraction_class": "client_company",
+          "extraction_text": "RetailStore",
+          "attributes": {"industry": "retail"}
+        },
+        {
+          "extraction_class": "budget",
+          "extraction_text": "$100,000",
+          "attributes": {"currency": "USD", "type": "total_budget"}
+        },
+        {
+          "extraction_class": "timeline",
+          "extraction_text": "December",
+          "attributes": {"deadline": "holiday season"}
+        },
+        {
+          "extraction_class": "stakeholder",
+          "extraction_text": "Mary",
+          "attributes": {"role": "main_contact", "title": "client"}
+        },
+        {
+          "extraction_class": "stakeholder",
+          "extraction_text": "Tom",
+          "attributes": {"role": "CEO", "approval_required": true}
+        },
+        {
+          "extraction_class": "stakeholder",
+          "extraction_text": "Sarah",
+          "attributes": {"role": "IT director", "approval_required": true}
+        },
+        {
+          "extraction_class": "requirement",
+          "extraction_text": "e-commerce site",
+          "attributes": {"priority": "must_have"}
+        },
+        {
+          "extraction_class": "requirement",
+          "extraction_text": "mobile optimization",
+          "attributes": {"priority": "must_have"}
+        },
+        {
+          "extraction_class": "requirement",
+          "extraction_text": "payment processing",
+          "attributes": {"priority": "must_have"}
+        },
+        {
+          "extraction_class": "pain_point",
+          "extraction_text": "slow loading times",
+          "attributes": {"impact": "user_experience"}
+        },
+        {
+          "extraction_class": "pain_point",
+          "extraction_text": "poor mobile experience",
+          "attributes": {"impact": "user_experience"}
+        },
+        {
+          "extraction_class": "pain_point",
+          "extraction_text": "customers can't complete purchases easily",
+          "attributes": {"impact": "conversion"}
+        }
+      ]
+    },
+    {
+      "text": "[00:00] Alex (Sales): Good morning, I'm Alex from WebSolutions. We're here to discuss your software development project.\n\n[00:15] Lisa (Client): Hi Alex, I'm Lisa from ManufacturingCo. We need a custom ERP system with inventory management and reporting.\n\n[00:30] Alex: What's your timeline and budget?\n\n[00:45] Lisa: We have $200,000 budget and need it live by March 1st. Our current system is failing and causing production delays.\n\n[01:00] Alex: Who needs to be involved in this project?\n\n[01:15] Lisa: I'll be the project manager, but our CFO Mike and operations director Karen need to sign off on major decisions.\n\n[01:30] Alex: What are your current metrics?\n\n[01:45] Lisa: We're losing $50,000 per month due to inventory errors and our production efficiency is only 65%.",
+      "extractions": [
+        {
+          "extraction_class": "client_company",
+          "extraction_text": "ManufacturingCo",
+          "attributes": {"industry": "manufacturing"}
+        },
+        {
+          "extraction_class": "budget",
+          "extraction_text": "$200,000",
+          "attributes": {"currency": "USD", "type": "total_budget"}
+        },
+        {
+          "extraction_class": "timeline",
+          "extraction_text": "March 1st",
+          "attributes": {"urgency": "high", "reason": "system_failing"}
+        },
+        {
+          "extraction_class": "stakeholder",
+          "extraction_text": "Lisa",
+          "attributes": {"role": "project_manager", "title": "client"}
+        },
+        {
+          "extraction_class": "stakeholder",
+          "extraction_text": "Mike",
+          "attributes": {"role": "CFO", "approval_required": true}
+        },
+        {
+          "extraction_class": "stakeholder",
+          "extraction_text": "Karen",
+          "attributes": {"role": "operations director", "approval_required": true}
+        },
+        {
+          "extraction_class": "requirement",
+          "extraction_text": "custom ERP system",
+          "attributes": {"priority": "must_have"}
+        },
+        {
+          "extraction_class": "requirement",
+          "extraction_text": "inventory management",
+          "attributes": {"priority": "must_have"}
+        },
+        {
+          "extraction_class": "requirement",
+          "extraction_text": "reporting",
+          "attributes": {"priority": "must_have"}
+        },
+        {
+          "extraction_class": "business_metric",
+          "extraction_text": "$50,000 per month",
+          "attributes": {"type": "monthly_loss", "cause": "inventory_errors"}
+        },
+        {
+          "extraction_class": "business_metric",
+          "extraction_text": "65%",
+          "attributes": {"type": "production_efficiency", "current_performance": "poor"}
+        }
+      ]
+    }
+  ],
+  "extraction_passes": 3,
+  "max_workers": 20,
+  "max_char_buffer": 1000,
+  "model_id": "gemini-2.5-flash",
+  "debug": false
+}

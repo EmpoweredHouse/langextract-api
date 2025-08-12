@@ -5,7 +5,7 @@ build:
 
 run:
 	docker run --rm -p 8080:8080 \
-		-e CLIENT_API_KEY=$${GEMINI_API_KEY} \
+		-e LANGEXTRACT_API_KEY=$${LANGEXTRACT_API_KEY:-$${GEMINI_API_KEY}} \
 		-e MODEL_ID=$${MODEL_ID:-gemini-2.5-flash} \
 		-v $$(pwd)/artifacts:/artifacts \
 		$(IMAGE)
